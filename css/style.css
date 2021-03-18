@@ -70,13 +70,12 @@
 
 .iphone {
   margin-top: 50px;
+  margin-right: 10%;
   margin-left: 10%;
 }
 
 .section_lead_text{
   margin-top: 80px;
-  margin-left: 5%;
-
 }
 
 .section_lead_intro {
@@ -90,4 +89,5 @@
 .section_lead_content {
   font-size: 20px;
   padding-top: 35px;
+  font-family: Lato;
 }
