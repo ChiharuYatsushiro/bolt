@@ -1,58 +1,61 @@
+.body {
+  font-family: "Lato";
+  color: #333;
+  font-weight: 100;
+}
+
 /* header */
+
+.inner {
+  width: 1100px;
+  margin: auto;
+}
+
 .header{
   background-color: #fff;
   width: 100%;
   height: auto;
 }
 .header-inner{
-  max-width: 1100px;
-  margin: auto;
-  display: inline;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .bolt {
   color: #333;
-  padding: 15px;
-  font-size: 30px;
-  margin-left: 25%;
+  font-size: 40px;  
 }
 
-.contact {
- display: inline-block;
- background-color:#74cfae;
- padding: 14px 12px;
-}
 .contact_text {
+  display: inline-block;
+  background-color:#74cfae;
+  padding: 14px 12px;
   font-size: 12px;
   color: #fff;
   text-align: center;
-  font-family: "lato";
 }
 
 /* top(them) */
 .top {
   background-color: #f2f2f2;
-  width: 100%;
-  height: auto;
 }
 .top_inner{
-  max-width: 1100px;
-  margin: auto;
+  padding: 250px 0;
 }
 .top_title {
   color: #74cfae;
-  padding: 250px;
   font-size: 90px;
   font-weight: 700;
   font-family: "Raleway";
   text-align: center;
 }
 .top_sub{
- padding-top: 20px;
+ margin-top: 20px;
  font-size: 30px;
  color: #c0c0c0;
- font-family: "lato";
  font-weight: 100;
+ text-align: center;
 }
 
 /* section_lead(What can we do) */
@@ -63,8 +66,6 @@
 }
 
 .section_lead_inner {
-  max-width: 1100px;
-  margin: auto;
   display: flex;
 }
 
@@ -81,13 +82,64 @@
 .section_lead_intro {
   font-size: 24px;
   color: #fff;
-  font-family: Raleway;
+  font-family: "Raleway";
   font-weight: 100;
   text-align: center;
 }
 
 .section_lead_content {
   font-size: 20px;
-  padding-top: 35px;
-  font-family: Lato;
+  margin-top: 35px;
+  font-family: "Lato";
+}
+
+/* articles */
+
+.articles {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: auto;
+}
+
+.articles_caption {
+  font-size: 24px;
+  font-family: "Raleway";
+  font-weight: 100;
+  padding: 60px 0 40px;
+  text-align: center;
+}
+
+.articles_images {
+  display: flex;
+}
+
+.articles_images li {
+  margin-left: 100px;
+}
+
+.articles_images li:nth-child(n+4){
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.articles_section{
+  display: flex;
+  justify-content: center;
+  padding: 90px 0 70px;
+}
+
+.articles_lead {
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  padding-right: 90px;
+}
+
+.articles_mail {
+  display: inline-block;
+  background-color:#74cfae;
+  padding: 14px 20px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
 }
