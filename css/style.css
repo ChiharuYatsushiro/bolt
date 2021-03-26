@@ -17,6 +17,8 @@
   width: 100%;
   height: auto;
   position: fixed;
+  top: 0;
+  left: 0;
 }
 .header-inner{
   padding: 15px 0;
@@ -43,15 +45,15 @@
  color: #333;
 }
 
-/* top(them) */
+/* top(theme) */
 
 .top {
   background-color: #f2f2f2;
-  width: 100%;
+  width: 100%;  
   height: auto;
 }
 .top__inner{
-  padding: 250px 0;
+padding: 320px 0 250px;  
 }
 
 .top__title {
@@ -124,13 +126,13 @@
   font-size: 24px;
   font-family: "Raleway";
   font-weight: 100;
-  padding-bottom:40px;
   text-align: center;
 }
 
 .articles__images {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .articles__link {
@@ -195,13 +197,13 @@
  font-size: 24px;
  font-family: "Raleway";
  font-weight: 100;
- text-align: center;
- padding-bottom: 50px;  
+ text-align: center;  
 }
  
 .circle {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 .circle li{
   margin-left:180px;
