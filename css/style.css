@@ -1,20 +1,22 @@
+@charset "UTF-8";
+
 .body {
   font-family: "Lato";
-  color: #333;
   font-weight: 100;
 }
-
-/* header */
 
 .inner {
   width: 1100px;
   margin: auto;
 }
 
+/* header */
+
 .header{
   background-color: #fff;
   width: 100%;
   height: auto;
+  position: fixed;
 }
 .header-inner{
   padding: 15px 0;
@@ -27,30 +29,39 @@
   font-size: 40px;  
 }
 
-.contact_text {
+.contact__text {
   display: inline-block;
   background-color:#74cfae;
   padding: 14px 12px;
   font-size: 12px;
   color: #fff;
+  text-decoration: none;
   text-align: center;
+  transition: all 0.3s;
+}
+.contact__text:hover {
+ color: #333;
 }
 
 /* top(them) */
+
 .top {
   background-color: #f2f2f2;
+  width: 100%;
+  height: auto;
 }
-.top_inner{
+.top__inner{
   padding: 250px 0;
 }
-.top_title {
+
+.top__title {
   color: #74cfae;
   font-size: 90px;
   font-weight: 700;
   font-family: "Raleway";
   text-align: center;
 }
-.top_sub{
+.top__sub{
  margin-top: 20px;
  font-size: 30px;
  color: #c0c0c0;
@@ -60,12 +71,12 @@
 
 /* section_lead(What can we do) */
 
-.section_lead {
+.section__lead {
   background-color: #74cfae;
   width: 100%;
+  height: auto;
 }
-
-.section_lead_inner {
+.section__lead__inner {
   display: flex;
 }
 
@@ -74,12 +85,15 @@
   margin-right: 10%;
   margin-left: 10%;
 }
+.iphone__img {
+  vertical-align: bottom;
+}
 
-.section_lead_text{
+.section__lead__text{
   margin-top: 80px;
 }
 
-.section_lead_intro {
+.section__lead__intro {
   font-size: 24px;
   color: #fff;
   font-family: "Raleway";
@@ -87,10 +101,12 @@
   text-align: center;
 }
 
-.section_lead_content {
+.section__lead__content {
   font-size: 20px;
   margin-top: 35px;
-  font-family: "Lato";
+  color: #fff;
+  text-align: center;
+
 }
 
 /* articles */
@@ -100,46 +116,143 @@
   width: 100%;
   height: auto;
 }
+.articles__inner{
+  padding: 60px 0 70px;
+}
 
-.articles_caption {
+.articles__caption {
   font-size: 24px;
   font-family: "Raleway";
   font-weight: 100;
-  padding: 60px 0 40px;
+  padding-bottom:40px;
   text-align: center;
 }
 
-.articles_images {
+.articles__images {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.articles_images li {
+.articles__link {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.articles__link:hover {
+  opacity: 1;
+}
+.articles__images li {
   margin-left: 100px;
 }
-
-.articles_images li:nth-child(n+4){
- display: flex;
- flex-wrap: wrap;
+.articles__images li:nth-child(3n+1) {
+  margin-left: 0;
+}
+.articles__images li:nth-child(n+4) {
+  margin-top: 90px;
 }
 
-.articles_section{
+.articles__section{
   display: flex;
   justify-content: center;
-  padding: 90px 0 70px;
+  padding-top: 90px;
 }
 
-.articles_lead {
+.articles__lead {
   display: inline-block;
   font-weight: 100;
   text-align: center;
-  padding-right: 90px;
+  margin-right: 90px;
 }
 
-.articles_mail {
-  display: inline-block;
+.articles__mail {
+  display: inline-block;  
   background-color:#74cfae;
-  padding: 14px 20px;
-  font-size: 12px;
   color: #fff;
+  font-size: 12px;
+  margin-bottom: auto;
+  padding: 14px 20px;
+  text-decoration: none;
   text-align: center;
+  transition: all 0.3s;
+ 
+}
+.articles__mail:hover {
+  color: #333;
+}
+
+/*　section_icon (OUR SLILS) */
+
+.section__icon {
+  background-color: #4e4e4e;
+  width: 100%;
+  height: auto;
+}
+.section__icon__inner {
+ padding:70px 0 100px;
+}
+
+.section__icon__caption {
+ color: #fff;
+ font-size: 24px;
+ font-family: "Raleway";
+ font-weight: 100;
+ text-align: center;
+ padding-bottom: 50px;  
+}
+ 
+.circle {
+  display: flex;
+  justify-content: center;
+}
+.circle li{
+  margin-left:180px;
+}
+.circle li:first-child{
+  margin-left: 0;
+}
+.circle__detail {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+/*　SNS */
+
+.sns {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: auto;
+}
+.sns_inner {
+  display: flex;
+  justify-content: center;
+  padding: 200px 0;
+}
+
+.sns__button {
+  display: inline-block;
+  text-align: center;
+  padding: 40px 0;
+  width: 185px;
+  color: #74cfae;
+  font-size: 40px;
+  transition: all 0.3s;
+}
+
+.sns__button:hover {
+  background-color: #fff;
+}
+
+/* footer */
+
+.footer {
+  background-color: #74cfae;
+  width: 100%;
+  height: auto;
+} 
+
+.footer_text {
+  color: #fff;
+  padding: 20px 0 25px;
+  text-align: right;
 }
