@@ -5,6 +5,14 @@
   font-weight: 100;
 }
 
+.img {
+  vertical-align: bottom;
+}
+
+.a {
+  display: inline-block;
+}
+
 .inner {
   width: 1100px;
   margin: auto;
@@ -19,6 +27,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 .header-inner{
   padding: 15px 0;
@@ -46,14 +55,16 @@
 }
 
 /* top(theme) */
-
+.main {
+  padding-top: 70px;
+}
 .top {
   background-color: #f2f2f2;
   width: 100%;  
   height: auto;
 }
 .top__inner{
-padding: 320px 0 250px;  
+padding: 250px 0;  
 }
 
 .top__title {
@@ -87,9 +98,6 @@ padding: 320px 0 250px;
   margin-right: 10%;
   margin-left: 10%;
 }
-.iphone__img {
-  vertical-align: bottom;
-}
 
 .section__lead__text{
   margin-top: 80px;
@@ -108,7 +116,7 @@ padding: 320px 0 250px;
   margin-top: 35px;
   color: #fff;
   text-align: center;
-
+  width: 650px;
 }
 
 /* articles */
@@ -133,6 +141,7 @@ padding: 320px 0 250px;
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
+  z-index: 1;
 }
 
 .articles__link {
@@ -153,6 +162,7 @@ padding: 320px 0 250px;
 }
 
 .articles__section{
+  align-items: flex-start;
   display: flex;
   justify-content: center;
   padding-top: 90px;
@@ -163,6 +173,7 @@ padding: 320px 0 250px;
   font-weight: 100;
   text-align: center;
   margin-right: 90px;
+  width: 450px;
 }
 
 .articles__mail {
@@ -170,7 +181,6 @@ padding: 320px 0 250px;
   background-color:#74cfae;
   color: #fff;
   font-size: 12px;
-  margin-bottom: auto;
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
@@ -252,9 +262,11 @@ padding: 320px 0 250px;
   width: 100%;
   height: auto;
 } 
+.footer__inner {
+  padding: 20px 0 25px;
+}
 
 .footer_text {
   color: #fff;
-  padding: 20px 0 25px;
   text-align: right;
 }
