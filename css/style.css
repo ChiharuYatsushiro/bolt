@@ -359,6 +359,8 @@
   .header {
     width: 100vw;
   }
+  
+  /* top(theme) */
   .top__inner {
     width: 160px 0 130px;
   }
