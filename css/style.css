@@ -99,7 +99,6 @@
 }
 
 .section__lead__inner {
-  display: flex;
   padding-top: 50px;
 }
 
@@ -146,7 +145,6 @@
 }
 
 .articles__images {
-  display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
   z-index: 1;
@@ -174,19 +172,10 @@
   margin-top: 0;
 }
 
-.articles__section{
-  align-items: flex-start;
-  display: flex;
-  justify-content: center;
-  margin-top: 90px;
-}
-
 .articles__lead {
   display: inline-block;
   font-weight: 100;
   text-align: center;
-  margin-right: 90px;
-  width: 450px;
 }
 
 .articles__mail { 
@@ -224,7 +213,6 @@
 }
  
 .circle {
-  display: flex;
   justify-content: center;
   margin-top: 50px;
 }
@@ -288,22 +276,37 @@
 }
 
 @media only screen and (min-width:1200px) {
+
+  .section__lead__inner,
+  .articles__images,
+  .articles__section,
+  .circle {
+    display: flex;
+  }
+
+  .articles__section {
+    align-items: flex-start;  
+    justify-content: center;
+    margin-top: 90px;
+  }
   
   .iphone {
     width: 450px;
-  }
-
-  .section__lead__inner {
-    width: 650p;
   }
   
   .section__lead__text {
     width: 650px
   }
+
+  .articles__lead {
+    width: 450px;
+    margin-right: 90px;
+  }
+
 }
 
 /* TAB */
-@media only screen and (min-width:768px) and ( max-width:1199px) { 
+@media only screen and ( max-width:1199px) { 
 
   .inner {
     width: 97%;
@@ -313,7 +316,6 @@
   /* section_lead(What can we do) */
 
   .section__lead__inner {
-    flex-direction: column;
     padding-bottom: 25px;
   }
 
@@ -324,7 +326,6 @@
   /* articles */
 
   .articles__images {
-    flex-direction: column; 
     text-align: center;
   }
   
@@ -341,14 +342,9 @@
   }
 
   .articles__section {
-    flex-direction: column;
-    align-items: center;
     margin-top: 40px;
-  }
-
-  .articles__lead {
-    margin: 0 auto;
-    width: 100%;
+    display: inline-block;
+    text-align: center;
   }
 
   .articles__mail {
@@ -358,7 +354,6 @@
   /*　section_icon (OUR SLILS) */
 
   .circle {
-    flex-direction: column;
     text-align: center;
   }
   .circle li {
@@ -372,11 +367,6 @@
 
 /* SP */
 @media screen and (max-width:767px) {
-
-  .inner {
-    width: 97%;
-    margin: 0 auto;
-  }
   
   /* header */
 
@@ -410,66 +400,6 @@
     padding: 160px 0 130px;
   }
 
- /* section_lead(What can we do) */
-
-  .section__lead__inner {
-    flex-direction: column;
-    width: 100%;
-    padding-bottom: 25px;
-  }
-
-  .section__lead__text {
-    margin-top: 20px;                 
-  }
-
-  /* articles */
-
-  .articles__images {
-    flex-direction: column; 
-    text-align: center;
-  }
-  
-  .articles__images li {
-    margin: 0;
-  }
-
-  .articles__images li:nth-child(3n+1) {
-    margin-top: 80px;
-  } 
-
-  .articles__images li:first-child {
-    margin-top: 0;
-  }
-
-  .articles__section {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .articles__lead {
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .articles__mail {
-    margin-top: 40px;
-  }
-
-  /*　section_icon (OUR SLILS) */
-
-  .circle {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .circle li {
-    margin: 88px 0 0 0;
-  }
-
-  .circle li:first-child{
-    margin-top: 0;
-  }
-  
   /* SNS */
 
   .sns_inner {
